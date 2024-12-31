@@ -53,7 +53,7 @@ class Showcase extends StatefulWidget {
   final String? title;
 
   /// Represents summary description of target widget
-  final String? description;
+  final Widget? description;
 
   /// ShapeBorder of the highlighted box when target widget will be showcased.
   ///
@@ -526,7 +526,7 @@ class Showcase extends StatefulWidget {
         scaleAnimationAlignment = null,
         disableScaleAnimation = null,
         title = null,
-        description = null,
+        description ?? Text('Default description'),
         titleTextAlign = TextAlign.start,
         descriptionTextAlign = TextAlign.start,
         titleAlignment = Alignment.center,
