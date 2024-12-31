@@ -526,7 +526,7 @@ class Showcase extends StatefulWidget {
         scaleAnimationAlignment = null,
         disableScaleAnimation = null,
         title = null,
-        description ?? Text('Default description'),
+        description = null,
         titleTextAlign = TextAlign.start,
         descriptionTextAlign = TextAlign.start,
         titleAlignment = Alignment.center,
