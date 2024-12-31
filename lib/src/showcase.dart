@@ -793,7 +793,7 @@ class _ShowcaseState extends State<Showcase> {
             screenSize: screenSize,
             title: widget.title,
             titleTextAlign: widget.titleTextAlign,
-            description: widget.description,
+            description: widget.description != null ? Text(widget.description!) : null,  // Convert string to Text widget
             descriptionTextAlign: widget.descriptionTextAlign,
             titleAlignment: widget.titleAlignment,
             descriptionAlignment: widget.descriptionAlignment,
